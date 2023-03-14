@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevEncurtaURL.API</name>
+    </assembly>
+    <members>
+        <member name="M:DevEncurtaURL.API.Controllers.ShortenedLinksController.Get">
+            <summary>
+            Obter uma listagem dos Ids
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DevEncurtaURL.API.Controllers.ShortenedLinksController.GetById(System.Int32)">
+            <summary>
+            Obter um Id específico
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DevEncurtaURL.API.Controllers.ShortenedLinksController.Post(DevEncurtaURL.API.Models.AddOrUpdateShortenedLinkModel)">
+            <summary>
+            Cadastrar um Link encurtado
+            </summary>
+            <remarks>
+            { "title": "ultimo-repositorio Git", "destinationLink": "https://github.com/higordutraa/DevEncurtaUrl" }
+            </remarks>
+            <param name="model">Dados de link</param>
+            <returns>Objetos recém-criado</returns>
+            <response code = "201">Sucesso!</response>
+        </member>
+        <member name="M:DevEncurtaURL.API.Controllers.ShortenedLinksController.Put(System.Int32,DevEncurtaURL.API.Models.AddOrUpdateShortenedLinkModel)">
+            <summary>
+            Atualizar um ID
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DevEncurtaURL.API.Controllers.ShortenedLinksController.Delete(System.Int32)">
+            <summary>
+            Deletar um Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DevEncurtaURL.API.Persistence.Migrations.PrimeiraMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:DevEncurtaURL.API.Persistence.Migrations.PrimeiraMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DevEncurtaURL.API.Persistence.Migrations.PrimeiraMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DevEncurtaURL.API.Persistence.Migrations.PrimeiraMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
